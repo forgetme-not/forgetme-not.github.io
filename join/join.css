@@ -1,0 +1,120 @@
+#contents{
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+}
+
+#contents .con_header{
+    padding-top: 4.6875rem;
+    text-align: center;
+}
+
+#contents .h_sec{
+    padding-top: 1.875rem;
+    color: gray;
+    font-size: 1rem;
+}
+
+.h1t{
+    margin: 0;
+    color: #222;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+h1{
+    display: block;
+    padding: 0;
+}
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box_join{
+    margin-top: 3.75rem;
+    padding: 3.125rem;
+    border-top: 1px solid;
+    background-color: #f8f8f8;
+}
+
+.btn_submit{
+    width: 100%;
+    padding: .875rem;
+    border-radius: .375rem;
+    border: 1px solid;
+    background: #333333;
+    font-size: 1.125rem;
+    color: #fff;
+    text-rendering: auto;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn_submit_wrap{
+    flex: none;
+    padding: 1.25rem;
+}
+
+/* 글자 강조 */
+.em{
+    color: #ee6900;
+    font-weight: normal;
+} 
+/* 회원가입 박스 */
+.box_gray{
+    min-height: 1%;
+    padding: 1.875rem;
+    background-color: #f8f8f8;
+    overflow: hidden;
+    border-top: 1px solid #222;
+    
+}
+/* .box_gray.box_form{
+    margin-top: 3.75rem;
+    padding: 3.125rem;
+    border-top: 1px solid #222;
+} */
+
+.box_gray.box_btm{
+    margin-top: 3.75rem;
+}
+
+.ul_b{
+    list-style:none;
+    }
+
+dt, dl, li{
+    margin: 0;
+    padding: 0;
+}
+
+.box_info dt{
+    color: #222;
+    font-size: 1.125rem;
+    margin-top: 3.75rem;
+}
+
+dd{
+    display: block;
+    margin-inline-start: 2.5rem;
+}
+
+div{
+    display: block;
+}
+
+.brand_box{
+    margin: 0 auto;
+    padding-top: 3.125rem;
+}
+
+fieldset{
+    border-style: none;
+}
