@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/login.css">
+  <title>PKS 회원가입페이지</title>
+</head>
+<body>
+  <form>
+      <div class="container" id="category">
+        <div id="login">로그인</div>
+        <div id="login">비회원 예매</div>
+        <div id="login">비회원 예매확인</div>
+      </div>
+      <div class="container" id="section2">
+        <fieldset class="container" id="section1" >
+          <div>
+            <div>
+              <p>아이디 비밀번호를 입력하신 후, 로그인 버튼을 클릭해 주세요.</p>
+            </div>
+            <div> 
+              <ul>
+                <li>
+                  <label for="user_id"></label>
+                  <input type="text" id="user_id" placeholder="아이디">
+                </li>
+                <li>
+                  <label for="user_pass"></label>
+                  <input type="password" id="user_pass" placeholder="비밀번호">
+                </li>
+              </ul>
+            </div>
+            <div>
+              <input type="submit" value="로그인"><a href="#"></a></input>
+            </div>
+              
+            <div id="idcheck" >
+              <label for="id_save"><input type="checkbox">아이디 저장</label>
+              <a href="#" id="id_find">아이디 찾기</a>
+              <a href="#" id="password_find">비밀번호 찾기</a>
+            </div>
+              
+            <div>
+              <a href="#" class="naver_button"><img src="./images/naver_login.png"></img></a>
+            </div>
+          </div>
+        </fieldset>
+  
+        <div class="card">
+          <div id="title">간편결제매니저(휴대폰간편로그인)</div>
+          <img src="./images/phone.png" id="phoneicon">
+          <div><span>휴대폰</span>으로 모든 사이트 로그인</div>
+        </div>
+      </div>
+    </form>
+  
+</body>
+</html>

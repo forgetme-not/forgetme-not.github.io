@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  display:flex;
+}
+#category{
+  justify-content: flex-start;
+  margin-left: 0.625rem;
+  margin-top: 1.875rem;
+}
+#login{
+  width: 6.25rem;
+  height: 1.875rem;
+  background-color: red;
+  border-radius: 0.1875rem;
+  text-align: center;
+  color:white;
+  font-weight: bold;
+  font-size:0.625rem;
+  margin:0.1875rem;
+  line-height: 1.875rem;
+}
+
+p{
+  font-size: 0.5rem;
+  margin-top: 0.5rem;
+}
+ul{
+  list-style: none;
+}
+fieldset{
+  width: 100%;
+  margin:0.625rem;
+  height: 15.625rem;
+}
+img{
+  width: 12.5rem;
+  margin-top: 0.625rem;
+}
+input[type="text"]{
+  margin-top: 0.1875rem;
+  width:12.5rem;
+  height: 1.5625rem;
+}
+input[type="password"]{
+  width:12.5rem;
+  height: 1.5625rem;
+  margin-top: 0.125rem;
+}
+input[type="submit"]{
+  width:12.5rem;
+  height: 3.3125rem;
+  border-radius: 0.1875rem;
+  border: none;
+  margin-top: 0.625rem;
+  background-color: red;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#section1{
+  border-top: 0.125rem solid #ccc;
+  border-bottom: 0.125rem solid #ccc;
+  border-left: none;
+  border-right: none;
+  flex-direction: column;
+  align-items: center;
+}
+#id_find{
+  margin-left:1.875rem;
+}
+#idcheck{
+  margin-top: 0.3125rem;
+  font-size: 0.5625rem;
+}
+.card{
+  display: none;
+}
+/* 타블렛 */
+@media screen and (min-width:768px) {
+  #login{
+    width: 120px;
+    height: 30px;
+    background-color: red;
+    border-radius: 3px;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    font-size:10px;
+    margin:3px;
+    line-height: 30px;
+  }
+  fieldset{
+    width: 50%;
+    margin:10px;
+    height: 250px;
+  }
+  #section2{
+    justify-content: center;
+  }
+  .card{
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    background-color: #eee;
+    border: 1px soild gray;
+  }
+  #section2{
+    justify-content: center;
+  }
+  #title{
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left:10px;
+    color: gray;
+    padding-bottom: 7px;
+    border-bottom: 1px solid gray;
+  }
+  #phoneicon{
+    width: 20px;
+  }
+}
+/* 데스크탑 */
+@media screen and (min-width:992px) {
+  
+}
+/* 큰 데스크탑 */
+@media screen and (min-width:1200px) {
+
+}
