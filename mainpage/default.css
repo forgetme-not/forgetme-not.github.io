@@ -1,0 +1,11 @@
+.carousel {
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+}
+
+.slide {
+  flex: 0 0 auto;
+}
