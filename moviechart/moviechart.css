@@ -1,0 +1,16 @@
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  width: 40%;
+  height: 40%;
+}
+
+@media screen and (min-width:1200px) {
+ 
+  }
