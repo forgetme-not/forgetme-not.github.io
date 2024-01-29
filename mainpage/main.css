@@ -1,6 +1,14 @@
+*{
+  margin: 0;
+}
 
 h1{
   text-align: center;
+}
+
+.topmenu{
+  background-color: goldenrod;
+  padding: 10px;
 }
 
 .personal{
