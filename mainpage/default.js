@@ -31,4 +31,4 @@ arrows.forEach(arrow => {
 // 1초마다 자동으로 이미지 변경
 setInterval(() => {
   changeImage("right");
-}, 100000);
+}, 1000);

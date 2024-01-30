@@ -50,15 +50,12 @@ nav {
   background-color: lightsalmon;
   height: 100%;
   padding: 10px;
-  /* padding 값 수정 */
   transform: translateY(100%);
-  /* 초기에 숨겨진 상태 */
   transition: transform 0.3s ease-in-out;
 }
 
 nav.active {
   transform: translateX(0);
-  /* 버튼 클릭 시 보이게 함 */
   background-color: lightsalmon;
 }
 
@@ -72,10 +69,18 @@ nav ul {
 
 nav ul li {
   padding: 1em 1em;
-  /* 좌우 여백 추가 */
 }
 
 nav a {
   color: black;
   text-decoration: none;
+}
+
+/* 미디어 쿼리 추가 */
+@media screen and (max-width: 380px) {
+  /* 화면 너비가 375px 이하일 때 적용되는 스타일 */
+  
+  button {
+    display: none; /* 퀵 메뉴 숨김 */
+  }
 }
