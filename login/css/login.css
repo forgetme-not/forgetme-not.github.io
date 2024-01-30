@@ -67,7 +67,7 @@ input[type="submit"]{
   border-left: none;
   border-right: none;
   flex-direction: column;
-  align-items: center;
+  align-items: center;   
 }
 #id_find{
   margin-left:1.875rem;
@@ -76,13 +76,14 @@ input[type="submit"]{
   margin-top: 0.3125rem;
   font-size: 0.5625rem;
 }
-.card{
+#card{
   display: none;
 }
-/* 타블렛 */
+
+/* 태블렛 */
 @media screen and (min-width:768px) {
   #login{
-    width: 120px;
+    width: 100px;
     height: 30px;
     background-color: red;
     border-radius: 3px;
@@ -93,35 +94,95 @@ input[type="submit"]{
     margin:3px;
     line-height: 30px;
   }
+  #category{
+    /* border:1px solid; */
+    width: 50%;
+    justify-content: flex-start;
+    /* margin-left: 11%; */
+    margin-top: 1.875rem;
+  }
+  #clearspace{
+    margin-top: 1.875rem;
+    width: 250px;
+    /* border:1px solid; */
+    margin-left:30px;
+  }
   fieldset{
     width: 50%;
     margin:10px;
     height: 250px;
   }
-  #section2{
-    justify-content: center;
-  }
-  .card{
+  #card{
     display: block;
+    /* justify-content: center; */
     width: 250px;
     height: 250px;
     margin: 10px;
     background-color: #eee;
-    border: 1px soild gray;
-  }
-  #section2{
-    justify-content: center;
+    border: 5px soild black;
   }
   #title{
     font-size: 13px;
-    margin-top: 10px;
+    width: 230px;
+    /* /* margin-top: 10px; */
     margin-left:10px;
     color: gray;
     padding-bottom: 7px;
     border-bottom: 1px solid gray;
+    /* border:1px solid */
+  }
+  #iconsection{
+    justify-content: center;
+    margin-left: 2px;
+    line-height: 30px;
+    /* border: 1px solid; */
+    width: 230px;
+    font-size: 14px;
+    padding: 2px
+  }
+  #phoneicon{
+    margin-top: 5px;
+  }
+  #tel{
+    border: 1px solid blue;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 230px;
+  }
+  input[type="number"]{
+    margin-top: 0.1875rem;
+    width:60px;
+    height: 20px;
   }
   #phoneicon{
     width: 20px;
+  }
+  input[value="휴대폰간편로그인"]{
+    width:230px;
+    height: 2.5rem;
+    border-radius: 0.1875rem;
+    border: none;
+    margin-top: 0.625rem;
+    margin-left: 10px;
+    background-color: blue;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  #exp{
+    border:1px solid;
+    margin-top: 16px;
+  }
+  #card{
+    justify-content: center;
+  }
+  #section3{
+    /* flex-direction: column; */
+    justify-content: center;
+  }
+  #section2{
+    justify-content: center;
   }
 }
 /* 데스크탑 */

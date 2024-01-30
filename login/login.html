@@ -8,51 +8,83 @@
 </head>
 <body>
   <form>
+    <div class="container" id="section3">
       <div class="container" id="category">
         <div id="login">로그인</div>
         <div id="login">비회원 예매</div>
         <div id="login">비회원 예매확인</div>
       </div>
-      <div class="container" id="section2">
-        <fieldset class="container" id="section1" >
-          <div>
+      <div id="clearspace"></div>
+    </div>    
+        <div class="container" id="section2">    <!--로그인이랑 광고 center로-->
+          <fieldset class="container" id="section1" >
             <div>
-              <p>아이디 비밀번호를 입력하신 후, 로그인 버튼을 클릭해 주세요.</p>
+              <div>
+                <p>아이디 비밀번호를 입력하신 후, 로그인 버튼을 클릭해 주세요.</p>
+              </div>
+              <div> 
+                <ul>
+                  <li>
+                    <label for="user_id"></label>
+                    <input type="text" id="user_id" placeholder="아이디">
+                  </li>
+                  <li>
+                    <label for="user_pass"></label>
+                    <input type="password" id="user_pass" placeholder="비밀번호">
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <input type="submit" value="로그인"><a href="#"></a></input>
+              </div>
+                
+              <div id="idcheck" >
+                <label for="id_save"><input type="checkbox">아이디 저장</label>
+                <a href="#" id="id_find">아이디 찾기</a>
+                <a href="#" id="password_find">비밀번호 찾기</a>
+              </div>
+                
+              <div>
+                <a href="#" class="naver_button"><img src="./images/naver_login.png"></img></a>
+              </div>
             </div>
-            <div> 
-              <ul>
-                <li>
-                  <label for="user_id"></label>
-                  <input type="text" id="user_id" placeholder="아이디">
-                </li>
-                <li>
-                  <label for="user_pass"></label>
-                  <input type="password" id="user_pass" placeholder="비밀번호">
-                </li>
-              </ul>
+          </fieldset>
+    <!-- </div>     -->
+          <div class="container" id="card">
+            <div id="title">간편결제매니저(휴대폰간편로그인)</div>
+            <div class="container" id="iconsection">
+              <img src="./images/phone.png" id="phoneicon">
+              <div><span>휴대폰</span>으로 모든 사이트 로그인</div>
             </div>
-            <div>
-              <input type="submit" value="로그인"><a href="#"></a></input>
+          <div id="tel">
+            <td>
+              <select name="tel1">
+                <option value="010">010</option>
+                <option value="011">011</option>
+                <option value="016">016</option>
+                <option value="017">017</option>
+                <option value="018">018</option>
+                <option value="019">019</option>
+              </select>
+              <span>-</span>
+              <input type="number" name="tel2">-
+              <input type="number" name="tel3">
+            </td>
+          </div>
+            <div >
+              <input type="submit" value="휴대폰간편로그인"><a href="#"></a></input>
             </div>
-              
-            <div id="idcheck" >
-              <label for="id_save"><input type="checkbox">아이디 저장</label>
-              <a href="#" id="id_find">아이디 찾기</a>
-              <a href="#" id="password_find">비밀번호 찾기</a>
-            </div>
-              
-            <div>
-              <a href="#" class="naver_button"><img src="./images/naver_login.png"></img></a>
+      
+            <div id="exp">
+              <p>-본서비스는(주)디지털스마트부산에서 제공하는 1,100원 서비스입니다.</p>
+              <p>-PKS는 통신판매 중계자로 본 서비스는 (주)디지털스마트부산의 책임하에 운영됩니다.</p>
+              <p>-고객센터 1599-4704</p>
             </div>
           </div>
-        </fieldset>
-  
-        <div class="card">
-          <div id="title">간편결제매니저(휴대폰간편로그인)</div>
-          <img src="./images/phone.png" id="phoneicon">
-          <div><span>휴대폰</span>으로 모든 사이트 로그인</div>
+
         </div>
-      </div>
+    <!-- </div> -->
+    <!-- </div> -->
     </form>
   
 </body>
