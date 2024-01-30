@@ -1,6 +1,6 @@
 * {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -13,26 +13,29 @@ body {
 }
 
 p {
-  margin:20px;
-  font-size:2em;  
+  margin: 20px;
+  font-size: 2em;  
 }
-#container{
-  position:relative;
-  width:800px;
-  height:600px;
-  border:2px solid #ccc;
+
+#container {
+  position: relative;
+  max-width: 100%; /* 최대 너비를 100%로 설정하여 브라우저에 맞게 조절 */
+  width: 800px;
+  height: 600px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .arrow {
-  z-index:100;
-  font-size:2em;
-  padding:10px;
-  background:#ddd;
-  color:#222;
-  opacity:0.2;
+  z-index: 100;
+  font-size: 2em;
+  padding: 10px;
+  background: #ddd;
+  color: #222;
+  opacity: 0.2;
 }
+
 .arrow:hover {
-  opacity:1;
+  opacity: 1;
 }
