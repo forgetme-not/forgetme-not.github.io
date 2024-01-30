@@ -50,7 +50,7 @@ nav {
   background-color: lightsalmon;
   height: 100%;
   padding: 10px;
-  transform: translateY(100%);
+  transform: translateX(-150px);
   transition: transform 0.3s ease-in-out;
 }
 
