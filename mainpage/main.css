@@ -6,6 +6,16 @@ h1 {
   text-align: center;
 }
 
+a {
+  text-decoration: none; /* 링크 요소의 밑줄 제거 */
+  
+}
+
+a:visited { /*클릭후에도 색 그대로*/
+  color: inherit; /* 방문한 링크의 색을 상위 요소에서 상속 */
+}
+
+
 .topmenu {
   background-color: lightcoral;
   padding: 10px;
@@ -20,12 +30,11 @@ h1 {
 
 .menu {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   gap: 10px;
 }
 
-button {
+#bttn {
   flex-direction: row;
   position: fixed;
   top: 20px;
@@ -79,8 +88,9 @@ nav a {
 /* 미디어 쿼리 추가 */
 @media screen and (max-width: 380px) {
   /* 화면 너비가 375px 이하일 때 적용되는 스타일 */
-  
+
   button {
-    display: none; /* 퀵 메뉴 숨김 */
+    display: none;
+    /* 퀵 메뉴 숨김 */
   }
 }
