@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    font-size: 1.5vw;
+}
+#allwrap{
+    position: relative;
+    display: flex;
+    width: 100%;
+
+}
+#container{
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+#contents{
+    /* clear: both; */
+    padding-bottom: 3.125rem;
+    
+}
+
+.box-image{
+    display: flex;
+    justify-content: center;
+}
+
+em{
+    color: #7c7c7c;
+}
+ul{
+    list-style: none;
+}
+
+
+
+img{
+    display: flex;
+}
+
+.title{
+    align-items: flex-start;
+
+}
+
+
+.genre{
+    border-top: 0.7px solid #ddd ;
+    align-items: flex-start;
+}
+
+.box-contents{
+    display: flex;
+    flex-direction: column;
+}
+
+.sect-base-movie{
+    display: flex;
+    justify-content: center;
+}
+
+/* 영화소개 칸 */
+.sect_movie{
+    display: flex;
+    /* justify-content: stretch; */
+    margin-top: 35px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* 광고배너 마진 */
+.movie-ad{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.heading{
+    position: relative;
+    display: flex;
+    width: 23.4375rem;
+    height: 39px;
+    background: #f6f6f6;
+    margin-bottom: 1.25rem;
+}
+
+
+.cols-content{
+    border-top: 1px solid #ddd;
+    margin: 30px;
+}
+
+
+
+/* 메뉴선택 바 */
+@media only screen and (max-width: 375px) {
+    .tab-menu {
+    width: 100px;
+    }
+}
+.tab-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    text-align: justify;
+    margin:50px auto;
+    padding:0;
+    list-style:none;
+    width:375px;
+    height:35px;
+    box-shadow:0 3px 4px #8b8b8b;
+    background: color #fb4357;
+  }
+.tab-menu li {
+    flex: 1;
+    border-right:1px solid #929292;
+  }
+.tab-menu li a:link{
+    color:black;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    width:75px;
+    height:35px;
+    line-height: 35px;
+  }
+.tab-menu li a:visited {
+    color:black;
+  }    
+.tab-menu li:last-child {
+    border-right:none;      
+  }
+.tab-menu li:not(:last-child) a:hover {
+    background-color:#555;
+    color:#fff;
+  }
+.tab-menu li:last-child a:hover {
+    background-color:#b30000;
+    color:#fff;
+  }

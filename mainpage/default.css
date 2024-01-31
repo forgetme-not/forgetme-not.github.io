@@ -1,6 +1,6 @@
 * {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -13,26 +13,42 @@ body {
 }
 
 p {
-  margin:20px;
-  font-size:2em;  
+  margin: 20px;
+  font-size: 2em;
 }
-#container{
-  position:relative;
-  width:800px;
-  height:600px;
-  border:2px solid #ccc;
+
+#container {
+  position: relative;
+  max-width: 100%;
+  width: 300px;
+  height: 200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* 수평 가운데 정렬 */
   align-items: center;
+  margin: 0 auto; /* 가로 중앙 정렬을 위해 추가 */
 }
-.arrow {
-  z-index:100;
-  font-size:2em;
-  padding:10px;
-  background:#ddd;
-  color:#222;
-  opacity:0.2;
+#container img {
+  width: 800px;
+  height: 500px;
 }
-.arrow:hover {
-  opacity:1;
+
+/* 미디어 쿼리 추가 */
+@media screen and (max-width: 380px) {
+  #container {
+    width: 100%;
+    height: auto;
+  }
+
+  #container img {
+    width: 100%;
+    height: auto;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 45vh; /*캐러셀 위로 당기기 위해서*/  
+  }
 }

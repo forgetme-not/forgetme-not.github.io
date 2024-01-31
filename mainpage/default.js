@@ -1,7 +1,10 @@
 const container = document.querySelector("#container"); // 캐러셀 영역
 const pics = ["c-1.jpg", "c-2.jpg"];  // 이미지 배열
 
-container.style.backgroundImage = `url(image/${pics[0]})`;  // 첫번째 이미지 기본으로 표시
+// 첫번째 이미지 추가
+const img = document.createElement("img");
+img.src = `image/${pics[0]}`;
+container.appendChild(img);
 
 const arrows = document.querySelectorAll(".arrow");  // 화살표
 let i = 0;  // 배열 인덱스
@@ -18,7 +21,7 @@ function changeImage(direction) {
       i = 0;  // 첫번째 이미지로 이동
     }
   }
-  container.style.backgroundImage = `url(image/${pics[i]})`;  // 현재 이미지 표시
+  img.src = `image/${pics[i]}`;  // 현재 이미지 표시
 }
 
 arrows.forEach(arrow => {
@@ -31,4 +34,4 @@ arrows.forEach(arrow => {
 // 1초마다 자동으로 이미지 변경
 setInterval(() => {
   changeImage("right");
-}, 100000);
+}, 3000);
