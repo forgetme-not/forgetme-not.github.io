@@ -8,10 +8,14 @@
 }
 
 img{
-  width: 30%;
-  height: 30%;
+  width: 40%;
+  height: 20%;
 }
 
 #text{
   font-size: 10px;
+}
+
+#winka{
+  width: 90%;
 }
