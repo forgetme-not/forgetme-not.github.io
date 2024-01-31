@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  /* margin-top:10px; */
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+#movie{
+  margin-top: 10px;
+  width: 100%;
+  display: grid;;
+  grid-template-columns: repeat(3,1fr) ;
+  /* grid-template-rows: 1fr 1fr 2fr; */
+  grid-template-areas: 
+    "box1 box1 box1"
+    "box2 box2 box2"
+    "box3 box4 box5"
+    "box6 box7 box8"
+    "box9 box10 box11";
+}
+#years{
+  height: 25px;
+}
+#box1{
+  /* border: 1px solid; */
+  grid-area: box1;
+  position: relative;
+}
+
+#box2{
+  height: 25px;
+  width: 10%;
+  /* border: 1px solid; */
+  grid-area: box2;
+  font-weight: bold;
+  line-height: 25px;
+  /* text-align: center; */
+}
+#box3 , #box4 , #box5 ,#box6, #box7, #box8 ,#box9, #box10, #box11{
+  height: 50px;
+  /* border:1px solid; */
+  margin-bottom: 7px;
+}
+#box3{grid-area:box3;}
+#box4{grid-area: box4;}
+#box5{grid-area: box5;}
+#box6{grid-area: box6;}
+#box7{grid-area: box7;}
+#box8{grid-area: box8;}
+#box9{grid-area: box9;}
+#box10{grid-area: box10;}
+#box11{grid-area: box11;}
+#time_box{
+  border:1px solid;
+  width: 90%;
+  height: 45px;
+  align-items: center;
+  border-radius: 3px;
+  background-color: #eee;
+}
+#time{
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 3px;
+}
+#seat{
+  text-align: center;
+  margin-top: 3px;
+  font-weight: bold;
+}
+span{
+  position: absolute;    /*영화이름 연령에 붙이기위한것*/
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 2%;
+}
+::-webkit-scrollbar {
+  display: none;   /* 크롬, 사파리, 오페라, 엣지 */
+}
