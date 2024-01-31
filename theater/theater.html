@@ -12,16 +12,14 @@
     <form>
       <ul id="userInput">  
         <li>
-          <input type="text" id="userInputField" placeholder="지역을 입력하세요">
+          <input type="text" id="userInputField" placeholder="지역을 입력하세요" autocomplete="off">
           <button type="button" onclick="printUserInput()">검색</button> <!-- type을 button으로 변경 -->
         </li>            
       </ul>
     </form><br><br><hr><br>
-    <div id="outputContainer">
-      <table id="output"></table>
-    </div>
+    <!-- 출력 컨테이너 -->
+    <div id="outputContainer"></div>
   </div>
-
   <script src="/theater/theater.js"></script>
 </body>
 </html>
