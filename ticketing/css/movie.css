@@ -1,0 +1,218 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing:border-box;
+  font-size: 8px;
+}
+a{
+  text-decoration:none;
+  color:black;
+}
+li{
+  list-style-type: none;
+}
+
+.menu{
+  width: 50%;
+  height: 545px;
+  background-color: #ccc;
+}
+.menu > li >a{
+  font-weight: bold;
+}
+.menu a{
+  display:block;
+  height: 40px;
+  line-height: 40px;
+  background-color: #eee;
+  margin-bottom: 2px;;
+}
+.menu {
+  position:relative;
+}
+#submenu{
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  height: 100px;
+  top:0px;
+  display: none;
+  font-weight: bold;
+}
+#submenu>li>a{
+  padding-left:10px;
+  
+}
+#submenu>div>li>a{
+  padding-left:10px;
+  
+}
+.menu >li:hover> #submenu{
+  display:block;
+}
+/* .menu>li>a:hover{
+  background-color: gray;
+  color:white;
+} */
+
+#submenu>div>li>a:hover{
+  background-color: gray;
+  color:white;
+}
+::-webkit-scrollbar {
+  display: none;   /* 크롬, 사파리, 오페라, 엣지 */
+}
+/*---------------------------------------------------------------------------------*/
+@media screen and (min-width:768px) {
+  /* 타블렛 */
+  .menu{
+    width: 50%;
+    height: 545px;
+    background-color: #ccc;
+  }
+  .menu > li >a{
+    font-weight: bold;
+  }
+  .menu a{
+    display:block;
+    height: 40px;
+    line-height: 40px;
+    background-color: #eee;
+    margin-bottom: 2px;;
+  }
+  .menu {
+    position:relative;
+  }
+  #submenu{
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    height: 100px;
+    top:0px;
+    display: none;
+    font-weight: bold;
+  }
+  #submenu>li>a{
+    padding-left:10px;
+  }
+  #submenu>div>li>a{
+    padding-left:10px;
+  }
+  .menu >li:hover> #submenu{
+    display:block;
+  }
+  /* .menu>li>a:hover{
+    background-color: gray;
+    color:white;
+  } */
+  #submenu>div>li>a:hover{
+    background-color: gray;
+    color:white;
+  }
+  ::-webkit-scrollbar {
+    display: none;   /* 크롬, 사파리, 오페라, 엣지 */
+  }
+}
+/*---------------------------------------------------------------------------------*/
+@media screen and (min-width:992px) {
+  /* 데스크탑 */
+  .menu{
+    width: 50%;
+    height: 545px;
+    background-color: #ccc;
+  }
+  .menu > li >a{
+    font-weight: bold;
+  }
+  .menu a{
+    display:block;
+    height: 40px;
+    line-height: 40px;
+    background-color: #eee;
+    margin-bottom: 2px;;
+  }
+  .menu {
+    position:relative;
+  }
+  #submenu{
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    height: 100px;
+    top:0px;
+    display: none;
+    font-weight: bold;
+  }
+  #submenu>li>a{
+    padding-left:10px;
+  }
+  #submenu>div>li>a{
+    padding-left:10px;
+  }
+  .menu >li:hover> #submenu{
+    display:block;
+  }
+  /* .menu>li>a:hover{
+    background-color: gray;
+    color:white;
+  } */
+
+  #submenu>div>li>a:hover{
+    background-color: gray;
+    color:white;
+  }
+  ::-webkit-scrollbar {
+    display: none;   /* 크롬, 사파리, 오페라, 엣지 */
+  }
+}
+/*---------------------------------------------------------------------------------*/
+@media screen and (min-width:1200px) {
+  /* 큰 데스크탑 */
+  .menu{
+    width: 50%;
+    height: 545px;
+    background-color: #ccc;
+  }
+  .menu > li >a{
+    font-weight: bold;
+  }
+  .menu a{
+    display:block;
+    height: 40px;
+    line-height: 40px;
+    background-color: #eee;
+    margin-bottom: 2px;;
+  }
+  .menu {
+    position:relative;
+  }
+  #submenu{
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    height: 100px;
+    top:0px;
+    display: none;
+    font-weight: bold;
+  }
+  #submenu>li>a{
+    padding-left:10px;
+  }
+  #submenu>div>li>a{
+    padding-left:10px;
+  }
+  .menu >li:hover> #submenu{
+    display:block;
+  }
+  /* .menu>li>a:hover{
+    background-color: gray;
+    color:white;
+  } */
+  #submenu>div>li>a:hover{
+    background-color: gray;
+    color:white;
+  }
+  ::-webkit-scrollbar {
+    display: none;   /* 크롬, 사파리, 오페라, 엣지 */
+  }
+}

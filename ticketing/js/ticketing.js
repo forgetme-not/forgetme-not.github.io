@@ -1,13 +1,11 @@
+
+
+//캐러셀부분
 const month_carousel=document.querySelector(".month_carousel")
-
-const carousel_html=["m.carousel_1.html","years_15.png", "years_18.png"]
-
+const carousel_html=["m.carousel_1.html","m.carousel.html"]
 month_carousel.style.backgroundImage=`url(images/${carousel_html[0]})`
-
 const arrows =document.querySelectorAll(".arrow")
-
 let i=0;
-
 arrows.forEach(arrow => {
   arrow.addEventListener("click",(e) => {
     if(e.target.id === "left") {
@@ -25,3 +23,4 @@ arrows.forEach(arrow => {
     month_carousel.style.backgroundImage=`url(images/${carousel_html[i]})`;
   });
 });
+//
