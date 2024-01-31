@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/ticketing.css">
+  <script src="https://kit.fontawesome.com/74f98780c0.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+    <div class="row_1">
+      <div class="ticket_category_1" id="ticket_category_2">
+        <div class="box" id="box1">ENGLISH</div>
+        <div class="box" id="box2">상영시간표</div>
+        <div class="box" id="box3">예매다시하기</div>
+      </div>
+    </div>
+    <div class="row_2_1" id="left_abvertising">광고L</div>
+    <table class="row_2_2">
+      <thead>
+        <tr id="table_row_1">
+          <th id="table_col_1">영화관</th>
+          <th id="table_col_2">영화선택</th>
+          <th id="table_col_4">날짜/시간</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td valign="top">
+            <ul class="menu">
+              <li>
+                전체
+              </li>
+              <li>
+                스페셜관
+              </li>
+            </ul>
+            <iframe src="movie_1.html" width="100%" height="550px" scrolling="no"></iframe>
+          </td>
+          <td valign="top">
+            <div class="movie_select">
+              <select>
+                <option>예매순</option>
+                <option>관객순</option>
+                <option>예정작</option>
+              </select>
+              <span class="fas fa-bars" title="icon1"></span>
+              <span class="fa-solid fa-square-caret-down"></span>
+              <iframe src="m_select_1.html" width="100%" height="550px" scrolling="no" id="m_select"></iframe>
+            </div>
+          </td>
+          <td>시간선택</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="row_2_3" id="right_abvertising">광고R</div>
+    <div class="ro2_3" id="bottom_abvertising">광고B</div>
+  </div>
+</body>
+</html>
