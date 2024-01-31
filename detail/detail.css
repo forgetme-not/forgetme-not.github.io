@@ -36,6 +36,7 @@ ul{
     margin-left: 11.25rem;
     margin-right: 11.25rem;
     
+    
 }
 
 .detail_top_wrap .poster_info {
@@ -52,6 +53,7 @@ ul{
     width: 316px;
     height: 468px;
 }
+
 
 .poster_info img{
     border-radius: 20px;
@@ -276,7 +278,7 @@ margin: 0 auto;
     left: 0;
     width: 100%;
     text-align: center;
-  }
+}
 
 .owl-stage-outer .owl-item {
     position: relative;
