@@ -1,0 +1,64 @@
+h1{
+  text-align: center;
+}
+#userInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+#userInput input {
+  width:200px;
+  height:30px;      
+}
+button {    
+background-color: lightblue;
+padding: 10px;
+border: 0px;
+}
+#attendant {
+  display: flex;
+  justify-content: center;
+  margin-top:20px;
+}
+#outputContainer{
+  display: flex;
+  flex-direction: column; /*카드 세로로 출력위해*/
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 0 0 0%;
+  text-align: center;
+  margin: 20px;
+}
+
+.card-header {
+  background-color: lightslategray;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+/* 미디어 쿼리 추가 */
+@media screen and (max-width: 380px) {
+  /* 화면 너비가 375px 이하일 때 적용되는 스타일 */
+.card{
+  width: 50%;
+}
+}
+
+#text{
+  font-size: 10px;
+}
