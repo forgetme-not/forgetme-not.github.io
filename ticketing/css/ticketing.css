@@ -4,7 +4,6 @@
   padding:0px;
   box-sizing: border-box;
 }
-@media screen and (min-width:768px){
 th, td{
   border:1px solid;
 }
@@ -38,7 +37,7 @@ th, td{
   grid-column-gap:10px;
 }
 .row_1{
-  border:1px solid;
+  /* border:1px solid; */
   grid-column-end: 3;
   grid-row-start: 1;
 }
@@ -63,7 +62,7 @@ th, td{
   border:1px solid;
   grid-column-end:3;
   grid-row-start: 3;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 /* table */
 #table_col_1{
@@ -113,5 +112,147 @@ th, td{
   }
   #m_select{
     margin-top:16px;
+  }
+  .month_carousel{
+    border:1px solid;
+    height: 100px;
+  }
+  .month_carousel{
+    position:relative;
+    width:90%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between; /* 화살표 양쪽*/
+    align-items: center;
+    margin-left: 5%;
+    border: none;
+  }
+  #day_select{
+    border: none;
+  }
+
+@media screen and (min-width:768px){
+th, td{
+  border:1px solid;
+}
+.ticket_category_1{
+  display:flex;
+}
+#ticket_category_2{
+  height: 25px;
+  /* border:1px solid; */
+  justify-content: flex-end;
+}
+.box{
+  border: 1px solid;
+  width:80px;
+  height: 25px;
+  font-size:12px;
+  line-height: 25px;
+  text-align: center;
+}
+#box1{
+  margin-right: 5px;
+}
+#box2{
+  margin-right: 5px;
+}
+#container{
+  display:grid;
+  grid-template-columns: 0.1fr 9.8fr 0.1fr;
+  grid-template-rows: 25px 600px 100px;
+  grid-row-gap: 10px;
+  grid-column-gap:10px;
+}
+.row_1{
+  /* border:1px solid; */
+  grid-column-end: 3;
+  grid-row-start: 1;
+}
+.row_2_2{
+  border:1px solid;
+  grid-column-end: 3;
+  grid-row-start: 2;
+}
+#left_abvertising{
+  border:1px solid;
+  grid-column-start:1;
+  grid-row-start: 2;
+  display: none;
+}
+#right_abvertising{
+  border:1px solid;
+  grid-column-end:4;
+  grid-row-start: 2;
+  display: none;
+}
+#bottom_abvertising{
+  border:1px solid;
+  grid-column-end:3;
+  grid-row-start: 3;
+  margin-top: 50px;
+}
+/* table */
+#table_col_1{
+  
+  width: 30%;
+}
+#table_col_2{
+  
+  width: 30%;
+}
+#table_col_3{
+  
+  width: 40%;
+}
+.menu{
+  width: 100%;
+
+}
+.menu li{
+  list-style:none;
+  border:1px solid;
+  width:100%;
+  height: 50px;
+}
+.menu > li{
+  width:50%;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+}
+  .movie_select{
+    border:1px solid;
+    height: 50px;
+    width: 100%;
+  }
+  .movie_select select{
+    width: 50%;
+    height: 20px;
+    margin-left: 7%;
+    border-radius: 3px;
+    border: 3px solid pink;
+    /* line-height: 20px; */
+    margin-top: 14px;
+  }
+  span[title=icon1]{
+    margin-left: 17%;
+  }
+  #m_select{
+    margin-top:16px;
+  }
+  .month_carousel{
+    position:relative;
+    width:90%;
+    height: 100px;
+    display:inline;
+    display: flex;
+    justify-content: space-between; /* 화살표 양쪽*/
+    align-items: center;
+    margin-left: 5%;
+    border: none;
+  }
+  #day_select{
+    border: none;
   }
 }
