@@ -43,7 +43,12 @@ li > span{
 ::-webkit-scrollbar {
   display: none;   /* 크롬, 사파리, 오페라, 엣지 */
 }
+.clicked{
+   background-color: #eee;
 
+  /* border:3px solid black; */
+  /* opacity: 0.4; */
+}
 
 
 

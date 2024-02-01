@@ -1,7 +1,7 @@
 
 const menu_2=document.querySelectorAll("#menu_2");
 const submenu=document.querySelectorAll("#submenu")
-const f =submenu.lastNodes;
+
 const sub_2=document.querySelectorAll("#sub_2")
 console.log(sub_2);
 console.log(sub_2.length);

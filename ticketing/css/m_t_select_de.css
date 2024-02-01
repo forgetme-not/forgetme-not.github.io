@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-size:8px;
+  font-weight: bold;
+}
+body{
+  height: 500px;
+}
+#default_box{
+  margin-top: 100px;
+}
+img{
+  align-items: center;
+  width: 20%;
+}
+div{
+  text-align: center;
+  /* line-height: 500px; */
+}

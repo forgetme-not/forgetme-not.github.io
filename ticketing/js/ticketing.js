@@ -1,30 +1,4 @@
 
-
-//캐러셀부분
-// const month_carousel=document.querySelector(".month_carousel")
-// const carousel_html=["years_12.png","years_15.png"]
-// month_carousel.style.backgroundImage=`url(images/${carousel_html[0]})`
-// const arrows =document.querySelectorAll(".arrow")
-// let i=0;
-// arrows.forEach(arrow => {
-//   arrow.addEventListener("click",(e) => {
-//     if(e.target.id === "left") {
-//       i--
-//       if(i<0){
-//         i= carousel_html.length -1;
-//       }
-//     }
-//     else if(e.target.id === "right") {
-//       i++;
-//       if(i>=carousel_html.length){
-//         i=0;
-//       }
-//     }
-//     month_carousel.style.backgroundImage=`url(images/${carousel_html[i]})`;
-//   });
-// });
-
-
 //전체, 스페셜관 버튼 활성화----------------------
 const menu=document.querySelector(".menu")
 const menus =document.querySelectorAll(".menu_1")
@@ -70,6 +44,7 @@ arrows.forEach(arrow => {
 //영화선택 옵션바 동작
 const select=document.querySelector(".priority_all")
 const selects =document.querySelectorAll(".priority")
+
 select.addEventListener("change",(e) => {
     if(e.target.value === "예매순") {
       document.getElementById('m_select').setAttribute('src',`m_select_1.html`);
@@ -81,3 +56,25 @@ select.addEventListener("change",(e) => {
       document.getElementById('m_select').setAttribute('src',`m_select_3.html`);
     }
   });
+//영화 상영시간표
+const time_select=document.querySelector("#box2");
+console.log(time_select)
+let a=0;
+time_select.addEventListener("click", () =>{
+  
+  if( (a%2)==0){
+    document.getElementById('time_movie').setAttribute('src','m_t_select_1.html')
+    a++;
+    console.log(a);
+  }
+  else{
+    document.getElementById('time_movie').setAttribute('src','m_t_select_3.html')
+    a++
+    console.log(a);
+  }
+});
+
+
+
+
+
