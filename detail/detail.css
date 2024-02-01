@@ -7,6 +7,10 @@ img{
     vertical-align: top;
 }
 
+em{
+    font-style: normal;
+}
+
 ul{
     list-style: none;
     margin: 0;
@@ -22,9 +26,18 @@ ul{
     color: #229c56;
 }
 
+.gr_12 {
+    color: #FFA200;
+}
+
+.gr_15 {
+    color: #dd7430;
+}
+
+/* 이미지와 띄우기 해결 */
 #container .detail_top_wrap {
     min-height: 460px;
-    padding-left: 363px;
+    padding-left: 450px;
 }
 
 
@@ -35,6 +48,7 @@ ul{
     margin-bottom: 15px;
     margin-left: 11.25rem;
     margin-right: 11.25rem;
+    
     
 }
 
@@ -53,6 +67,7 @@ ul{
     height: 468px;
 }
 
+
 .poster_info img{
     border-radius: 20px;
 }
@@ -64,6 +79,10 @@ ul{
     margin-left: 12px;
     font-size: 18px
 }
+.mov_info1 li:first-child:before {
+    width: 0
+}
+
 .mov_info1 li:before {
     content: '';
     display: block;
@@ -74,6 +93,7 @@ ul{
     position: absolute;
     top: 4px;
     left: 0;
+    /* 전체관람가 줄 간격 */
 }
 
 
@@ -119,6 +139,7 @@ ul{
     font-size: 19px;
     text-align: center;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 
@@ -143,16 +164,28 @@ ul{
     font: 0 auto;
     text-align: center;
     vertical-align: middle;
+    cursor: pointer;
+    
+}
+
+.btn_icon_share:hover {
+    background-color:rgba(255,182,193,0.7);
+    transition: 0.7s;
+}
+.btn_icon_wish:hover{
+    background-color:rgba(255,182,193,0.7);
+    transition: 0.7s;
 }
 
 
-
+/* 영화소개 txtarea box */
 .txtarea_box{
     margin: 30px 0 27px;
+    margin-bottom: 10%;
 }
 .txtarea_box .txtarea {
     overflow-y: scroll;
-    height: 115px;
+    height: 9.375rem;
     line-height: 1.6;
     font-size: 18px;
     border: 0;
@@ -169,6 +202,7 @@ ul{
     background-color: #fff;
 }
 
+/* 예매하기 버튼 */
 .btn_col{
     display: inline-block;
     box-sizing: border-box;
@@ -204,6 +238,13 @@ ul{
     color: #7c7c7c;
 }
 
+/* .movi_tab_info1 .detail_info2 {
+    color: #191919;
+    font-size: 21px;
+} */
+
+
+
 .mov_info{
     overflow: hidden;
     margin: 0px;
@@ -213,6 +254,19 @@ ul{
     text-align: justify;
     /* justify-content: center ; */
 }
+
+.tit_info {
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-size: 30px;
+    letter-spacing: -2px;
+}
+
+
+.tit_info strong {
+    font-size: 26px;
+}
+
 
 .tit_info.type1{
     font-size: 26px;
@@ -265,7 +319,7 @@ margin: 0 auto;
     padding: 0;
     list-style: none;
     z-index: 1;
-    /* -webkit-tap-highlight-color: transparent; */
+
     
     overflow: hidden;
 }
@@ -276,17 +330,20 @@ margin: 0 auto;
     left: 0;
     width: 100%;
     text-align: center;
-  }
+}
 
 .owl-stage-outer .owl-item {
     position: relative;
     float: left;
     display: block;
     min-height: 1px;
-    /* -webkit-backface-visibility: hidden;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none; */
+
 }
+.owl-item{
+    margin-top: 3%;
+}
+
+
 
 .owl-stage:after {
     content: ".";

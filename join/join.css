@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap');
+
+
+* {
+  font-family: 'Black Han Sans', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
 #contents{
     position: relative;
     margin: 0 auto;
@@ -43,8 +52,9 @@ body{
     background-color: #f8f8f8;
 }
 
+/* 버튼 */
 .btn_submit{
-    width: 100%;
+    width: 80%;
     padding: .875rem;
     border-radius: .375rem;
     border: 1px solid;
@@ -74,7 +84,7 @@ body{
     background-color: #f8f8f8;
     overflow: hidden;
     border-top: 1px solid #222;
-    text-align: center;
+    text-align: justify;
     
 }
 /* .box_gray.box_form{

@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap');
+
+
+* {
+  font-family: 'Black Han Sans', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+@keyframes colorChange { /*애니메이션 효과를 주기위해 정의*/
+  0% {
+    background-color: lightcoral;
+  }
+  50% {
+    background-color: pink;
+  }
+  100%{
+    background-color: lightcoral;
+  }
+}
+
 * {
   margin: 0;
 }
@@ -8,17 +29,19 @@ h1 {
 
 a {
   text-decoration: none; /* 링크 요소의 밑줄 제거 */
-  
 }
 
-a:visited { /*클릭후에도 색 그대로*/
-  color: inherit; /* 방문한 링크의 색을 상위 요소에서 상속 */
+a:link {
+  color: black; /* 방문하지 않은 링크의 색상 */
 }
 
+a:visited {
+  color: black; /* 방문한 링크의 색상 */
+}
 
 .topmenu {
-  background-color: lightcoral;
   padding: 10px;
+  animation: colorChange 10s infinite;
 }
 
 .personal {
@@ -31,7 +54,7 @@ a:visited { /*클릭후에도 색 그대로*/
 .menu {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
 }
 
 #bttn {
@@ -46,6 +69,7 @@ a:visited { /*클릭후에도 색 그대로*/
   color: black;
   font-size: large;
   transition: transform 0.3s ease-in-out;
+  border-radius: 8px;
 }
 
 button.active {

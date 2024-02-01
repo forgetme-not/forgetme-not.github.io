@@ -7,6 +7,22 @@
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  margin: 20px auto;
+  position: relative;
+  text-align: center;
+}
+
+.carousel-img {
+  width: 100%;
+  height: auto;
+}
+
 h1 {
   text-align: center;
 }
@@ -52,4 +68,15 @@ h1 {
 
 #text{
   font-size: 10px;
+}
+
+@media screen and (max-width: 380px) {
+  /* 화면 너비가 375px 이하일 때 적용되는 스타일 */
+  #container{
+    display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 70%;
+  position: relative;
+  }
 }
