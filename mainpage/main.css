@@ -1,3 +1,16 @@
+
+@keyframes colorChange { /*애니메이션 효과를 주기위해 정의*/
+  0% {
+    background-color: lightcoral;
+  }
+  50% {
+    background-color: pink;
+  }
+  100%{
+    background-color: lightcoral;
+  }
+}
+
 * {
   margin: 0;
 }
@@ -14,11 +27,9 @@ a {
 a:visited { /*클릭후에도 색 그대로*/
   color: inherit; /* 방문한 링크의 색을 상위 요소에서 상속 */
 }
-
-
 .topmenu {
-  background-color: lightcoral;
   padding: 10px;
+  animation: colorChange 10s infinite;
 }
 
 .personal {
