@@ -1,59 +1,75 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  margin: 20px auto;
+  position: relative;
+  text-align: center;
 }
 
-body {
+.carousel-img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.item-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card button {
+  background: none;
+  border: none;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
-p {
-  margin: 20px;
-  font-size: 2em;
+.card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
 }
 
-#container {
-  position: relative;
-  max-width: 100%;
-  width: 300px;
-  height: 200px;
-  display: flex;
-  justify-content: center; /* 수평 가운데 정렬 */
-  align-items: center;
-  margin: 0 auto; /* 가로 중앙 정렬을 위해 추가 */
-}
-#container img {
-  width: 800px;
-  height: 500px;
+.card p {
+  margin-top: 10px;
+  font-size: 1.2em;
 }
 
-/* 미디어 쿼리 추가 */
-@media screen and (max-width: 380px) {
-  #container {
-    width: 100%;
-    height: auto;
-  }
-
-  #container img {
-    width: 100%;
-    height: auto;
-  }
-
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 45vh; /*캐러셀 위로 당기기 위해서*/  
-  }
+.card button:hover {
+  transform: translateY(-5px); /* 마우스 호버 시 카드를 약간 위로 이동 */
 }
-
 
 #text{
   font-size: 10px;
+}
+
+@media screen and (max-width: 380px) {
+  /* 화면 너비가 375px 이하일 때 적용되는 스타일 */
+  #container{
+    display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 70%;
+  position: relative;
+  }
 }
