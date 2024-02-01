@@ -24,7 +24,7 @@ li{
   display:block;
   height: 40px;
   line-height: 40px;
-  background-color: #eee;
+  /* background-color: #eee; */
   margin-bottom: 2px;;
 }
 .menu {
@@ -47,9 +47,9 @@ li{
   padding-left:10px;
   
 }
-.menu >li:hover> #submenu{
+/* .menu >li:hover> #submenu{
   display:block;
-}
+} */
 /* .menu>li>a:hover{
   background-color: gray;
   color:white;
@@ -61,6 +61,15 @@ li{
 }
 ::-webkit-scrollbar {
   display: none;   /* 크롬, 사파리, 오페라, 엣지 */
+}
+.clicked{
+  background-color: gray;
+  color:white;
+}
+
+.sub_clicked{
+  background-color: gray;
+  color:white;
 }
 /*---------------------------------------------------------------------------------*/
 @media screen and (min-width:768px) {
@@ -111,6 +120,14 @@ li{
   }
   ::-webkit-scrollbar {
     display: none;   /* 크롬, 사파리, 오페라, 엣지 */
+  }
+  .clicked{
+    background-color: black;
+    color:white;
+  }
+  .sub_clicked{
+    background-color: gray;
+    color:white;
   }
 }
 /*---------------------------------------------------------------------------------*/
@@ -164,6 +181,14 @@ li{
   ::-webkit-scrollbar {
     display: none;   /* 크롬, 사파리, 오페라, 엣지 */
   }
+  .clicked{
+    background-color: black;
+    color:white;
+  }
+  .sub_clicked{
+    background-color: gray;
+    color:white;
+  }
 }
 /*---------------------------------------------------------------------------------*/
 @media screen and (min-width:1200px) {
@@ -214,5 +239,13 @@ li{
   }
   ::-webkit-scrollbar {
     display: none;   /* 크롬, 사파리, 오페라, 엣지 */
+  }
+  .clicked{
+    background-color: black;
+    color:white;
+  }
+  .sub_clicked{
+    background-color: gray;
+    color:white;
   }
 }

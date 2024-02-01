@@ -29,21 +29,21 @@
         <tr>
           <td valign="top">
             <ul class="menu">
-              <li>
+              <li class="menu_1" id="left">
                 전체
               </li>
-              <li style="border:none">
+              <li class="menu_1" id="right" style="border:none">
                 스페셜관
               </li>
             </ul>
-            <iframe src="movie_2.html" width="100%" height="550px" scrolling="no"></iframe>
+            <iframe id="menu_click" src="movie_2.html" width="100%" height="550px" scrolling="no"></iframe>
           </td>
           <td valign="top">
             <div class="movie_select">
-              <select>
-                <option>예매순</option>
-                <option>관객순</option>
-                <option>예정작</option>
+              <select class="priority_all">
+                <option class="priority" id="first">예매순</option>
+                <option class="priority" id="second">관객순</option>
+                <option class="priority" id="third">예정작</option>
               </select>
               <span class="fas fa-bars" title="icon1"></span>
               <span class="fa-solid fa-square-caret-down"></span>
