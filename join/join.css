@@ -43,8 +43,9 @@ body{
     background-color: #f8f8f8;
 }
 
+/* 버튼 */
 .btn_submit{
-    width: 100%;
+    width: 80%;
     padding: .875rem;
     border-radius: .375rem;
     border: 1px solid;
@@ -74,7 +75,7 @@ body{
     background-color: #f8f8f8;
     overflow: hidden;
     border-top: 1px solid #222;
-    text-align: center;
+    text-align: justify;
     
 }
 /* .box_gray.box_form{
