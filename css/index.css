@@ -29,12 +29,16 @@ h1 {
 
 a {
   text-decoration: none; /* 링크 요소의 밑줄 제거 */
-  
 }
 
-a:visited { /*클릭후에도 색 그대로*/
-  color: inherit; /* 방문한 링크의 색을 상위 요소에서 상속 */
+a:link {
+  color: black; /* 방문하지 않은 링크의 색상 */
 }
+
+a:visited {
+  color: black; /* 방문한 링크의 색상 */
+}
+
 .topmenu {
   padding: 10px;
   animation: colorChange 10s infinite;
