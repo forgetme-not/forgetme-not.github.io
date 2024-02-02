@@ -3,34 +3,37 @@
   /* margin-top:10px; */
   padding: 0;
   box-sizing: border-box;
-  font-size: 10px;
+  font-size: 4vw;
 }
 
 li{
   list-style-type: none;
   border-bottom:1px solid;
   height: 50px;
+  line-height: 50px;
   width: 100%;
   position: relative;
 }
 #y_all{
-  height: 25px;
-  margin-top: 11px;
+  width: 10vw;
+  vertical-align: middle;
   margin-left: 7%;
 }
 #y_12{
-  height: 25px;
-  margin-top: 11px;
+  width: 10vw;
+  vertical-align: middle;
+  /* margin-top: 3.5vh; */
+  /* line-height: 50px; */
   margin-left: 7%;
 }
 #y_15{
-  height: 25px;
-  margin-top: 11px;
+  width: 10vw;
+  vertical-align: middle;
   margin-left: 7%;
 }
 #y_18{
-  height: 25px;
-  margin-top: 11px;
+  width: 10vw;
+  vertical-align: middle;
   margin-left: 7%;
 }
 li > span{

@@ -3,7 +3,6 @@
   /* margin-top:10px; */
   padding: 0;
   box-sizing: border-box;
-  font-size: 10px;
 }
 #movie{
   margin-top: 10px;
@@ -21,7 +20,7 @@
     "box15 box16 box17";
 }
 #years{
-  height: 25px;
+  height: 7vw;
 }
 #box1{
   /* border: 1px solid; */
@@ -32,15 +31,19 @@
 #box2{
   height: 25px;
   width: 10%;
-  /* border: 1px solid; */
+  font-size: 4vw;
   grid-area: box2;
   font-weight: bold;
   line-height: 25px;
   /* text-align: center; */
 }
 #box3 , #box4 , #box5 ,#box6, #box7, #box8 ,#box9, #box10, #box11,  #box12 , #box13 ,#box14, #box15, #box16 ,#box17{
+
   height: 50px;
+  /* display: flex; */
+  /* line-height:25px; */
   /* border:1px solid; */
+  /* position: relative; */
   margin-bottom: 7px;
 }
 #box3{grid-area:box3;}
@@ -61,27 +64,30 @@
 #time_box{
   border:1px solid;
   width: 90%;
-  height: 45px;
+  height: 10vh;
   align-items: center;
   border-radius: 3px;
   background-color: #eee;
 }
 #time{
+  justify-items: center;
+  top:40%;
   font-weight: bold;
   text-align: center;
-  font-size: 14px;
+  font-size: 4vw;
   margin-top: 3px;
 }
 #seat{
   text-align: center;
   margin-top: 3px;
+  font-size: 4vw;
   font-weight: bold;
 }
 span{
   position: absolute;    /*영화이름 연령에 붙이기위한것*/
   line-height: 25px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 5vw;
   margin-left: 2%;
 }
 ::-webkit-scrollbar {

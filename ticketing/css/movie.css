@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing:border-box;
-  font-size: 8px;
+  /* font-size: 6vw; */
 }
 a{
   text-decoration:none;
@@ -19,6 +19,7 @@ li{
 }
 .menu > li >a{
   font-weight: bold;
+  font-size: 5vw;
 }
 .menu a{
   display:block;
@@ -38,6 +39,7 @@ li{
   top:0px;
   display: none;
   font-weight: bold;
+  font-size: 4vw;
 }
 #submenu>li>a{
   padding-left:10px;
