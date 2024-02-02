@@ -52,6 +52,7 @@ td{
   grid-row-start: 2;
 }
 #left_abvertising{
+  background-image: border-box;
   border:1px solid;
   grid-column-start:1;
   grid-row-start: 2;
@@ -451,13 +452,13 @@ td{
     border:1px solid;
     grid-column-start:1;
     grid-row-start: 2;
-    display: block;
+    /* display: block; */
   }
   #right_abvertising{
     border:1px solid;
     grid-column-end:4;
     grid-row-start: 2;
-    display: block;
+    /* display: block; */
   }
   #bottom_abvertising{
     position: relative;
