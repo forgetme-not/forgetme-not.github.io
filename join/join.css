@@ -3,8 +3,8 @@
 
 
 * {
-  font-family: 'Black Han Sans', sans-serif;
-  font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 #contents{
@@ -16,6 +16,10 @@
 #contents .con_header{
     padding-top: 4.6875rem;
     text-align: center;
+}
+
+.con_header{
+    padding-left: 30px;
 }
 
 #contents .h_sec{
