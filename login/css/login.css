@@ -59,7 +59,7 @@ input[type="password"]{
   height: 1.5625rem;
   margin-top: 0.125rem;
 }
-input[type="submit"]{
+input[type="button"]{
   width:12.5rem;
   height: 3.3125rem;
   border-radius: 0.1875rem;
