@@ -6,18 +6,16 @@
         width: 100%;
     }
 
-    .detail_top_wrap{
-        width: 100%;
-        /* margin-left: 2%; */
+    .movie_detail{
+        width: 90%;
+        
+        margin: 0 auto;
     }
     .movie_detail>.detail_top_wrap{
         width: 100%;
+        max-width: 768px;
         margin: auto;
     }
-
-
-
-
 /* 
     .inner2{
         display: flex;
@@ -27,10 +25,14 @@
     justify-content: center;
     }
 
-    .banner_wrap>.banner01 .banner02{
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
+    .banner_wrap{
+        width: 768px;
+    }
+    
+    .banner_wrap img{
+        display:block;
+        width:100%;
+        height:auto;
     }
 
     }
@@ -39,9 +41,31 @@
 
 @media screen and (min-width:375px) and (max-width:767px) {
     /* 모바일 */
+
+
+    .movie_detail{
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+}
+
+
+
+    /* .movie_detail img{
+        display:block;
+        width:100%;
+        height:auto;
+    }
+    .tit_info div ul{
+        display:block;
+        width:100%;
+        height:auto;
+    } */
+
+
+
 .movie_detail>.detail_top_wrap{
-    width: 100%;
-    margin: 0 auto;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
 }
 #container{
     /* margin-top: 10%; */
@@ -74,9 +98,14 @@ justify-content: space-between;
 .owl-stage{
     /* padding-left: 9%; */
 }
+.banner_wrap{
+	width:400px;
+}
 
-.banner_wrap>.banner01 .banner02{
-    width: 100%;
+.banner_wrap img{
+	display:block;
+	width:100%;
+	height:auto;
 }
 }
 
@@ -127,9 +156,14 @@ a{
     color: #dd7430;
 }
 
+.owl-item>a{
+    color: #000;
+}
+
 /* --------------------------------------------------------- */
 
 .movie_detail{
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -172,6 +206,7 @@ a{
     border-radius: 20px;
 }
 
+/* li 속성 */
 .mov_info1 li {
     display: inline-block;
     position: relative;
@@ -328,9 +363,6 @@ a{
     /* overflow: inherit; */
 }
 
-
-
-
 .inner2 .mov_info .detail_info2 li:before {
     content: '';
     display: block;
@@ -342,18 +374,10 @@ a{
     top: 15px;
     left: 0;
 }
-
 .inner2 .mov_info .detail_info2 em {
     padding-right: 10px;
     color: #7c7c7c;
 }
-
-/* .movi_tab_info1 .detail_info2 {
-    color: #191919;
-    font-size: 21px;
-} */
-
-
 
 .mov_info{
     overflow: hidden;
@@ -383,6 +407,12 @@ a{
     font-size: 26px;
     z-index: 2;
 }
+.tit_info.type1 em {
+    font-family: "Roboto";
+    font-size: 17px;
+    opacity: .8;
+}
+
 
 .innerfull{
     width: 100%;
@@ -483,6 +513,12 @@ margin: 0 auto;
     text-align: center;
 }
 
+
+.banner01{
+    max-width: 100%;
+    height: auto;
+}
 .banner02{
     border-top: rgb(0, 108, 255);
 }
+
