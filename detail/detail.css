@@ -1,3 +1,91 @@
+@media all and (min-width:767px) and (max-width:1023px) {
+    /* 타블렛 */
+
+
+    #container{
+        width: 100%;
+    }
+
+    .detail_top_wrap{
+        width: 100%;
+        /* margin-left: 2%; */
+    }
+    .movie_detail>.detail_top_wrap{
+        width: 100%;
+        margin: auto;
+    }
+
+
+
+
+/* 
+    .inner2{
+        display: flex;
+    } */
+    
+    .trailer{
+    justify-content: center;
+    }
+
+    .banner_wrap>.banner01 .banner02{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    }
+    
+
+
+@media screen and (min-width:375px) and (max-width:767px) {
+    /* 모바일 */
+.movie_detail>.detail_top_wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+#container{
+    /* margin-top: 10%; */
+    width: 100%;
+    
+}
+
+.detail_top_wrap{
+    padding-left: 10%;
+}
+
+.poster_info{
+    margin-left: 3%;
+}
+
+
+
+
+.inner2{
+    text-align: center;
+}
+
+.trailer{
+justify-content: space-between;
+}
+.stillcut{
+    width: 100%;
+}
+
+.owl-stage{
+    /* padding-left: 9%; */
+}
+
+.banner_wrap>.banner01 .banner02{
+    width: 100%;
+}
+}
+
+
+
+/* 미디어쿼리 분리----------------------------------------------- */
+
+
+
 #container{
     margin-top: 90px;
 }
@@ -17,6 +105,11 @@ ul{
     padding: 0;
 }
 
+a{
+    text-decoration-line: none;
+}
+
+
 .roboto{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -34,6 +127,13 @@ ul{
     color: #dd7430;
 }
 
+/* --------------------------------------------------------- */
+
+.movie_detail{
+    margin: 0 auto;
+}
+
+
 /* 이미지와 띄우기 해결 */
 #container .detail_top_wrap {
     min-height: 460px;
@@ -44,11 +144,11 @@ ul{
 .detail_top_wrap {
     position: relative;
     min-height: 240px;
-    padding-left: 245px;
+    padding-left: 300px;
     margin-bottom: 15px;
-    margin-left: 11.25rem;
-    margin-right: 11.25rem;
-    
+    /* margin-left: 2%; */
+    /* margin-right: 11.25rem; */
+    /* 원래 마진 좌우로 조절 */
     
 }
 
@@ -61,11 +161,11 @@ ul{
     z-index: 1
 }
 
-.detail_top_wrap .poster_info {
+/* .detail_top_wrap .poster_info {
     top: -30px;
     width: 316px;
     height: 468px;
-}
+} */
 
 
 .poster_info img{
@@ -221,6 +321,16 @@ ul{
     cursor: pointer;
 }
 
+.tab_con{
+    position: relative;
+    width: auto;
+    height: auto;
+    /* overflow: inherit; */
+}
+
+
+
+
 .inner2 .mov_info .detail_info2 li:before {
     content: '';
     display: block;
@@ -250,7 +360,8 @@ ul{
     margin: 0px;
     padding: 50px 0;
     margin-top: 30px;
-    padding-left: 20%;
+    padding-left: 10%;
+    padding-right: 15%;
     text-align: justify;
     /* justify-content: center ; */
 }
@@ -282,7 +393,7 @@ ul{
 }
 
 .inner2{
-width: 980px;
+width: 90%;
 margin: 0 auto;
 }
 
@@ -367,6 +478,7 @@ margin: 0 auto;
 
 
 .banner_wrap{
+    width: 100%;
     padding-top: 70px;
     text-align: center;
 }
